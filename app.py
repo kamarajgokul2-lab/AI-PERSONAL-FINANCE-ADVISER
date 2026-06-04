@@ -151,7 +151,7 @@ Here is the user's raw transaction data:
     """
 
     try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(prompt)
         if response:
             return response.text.strip()
